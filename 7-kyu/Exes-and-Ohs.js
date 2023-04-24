@@ -10,5 +10,24 @@
 
 // My answer:
 function XO(str) {
-    //code here
+    x = 0
+    o = 0
+    lowStr = str.toLowerCase()
+    for (let i = 0; i < lowStr.length; i++) {
+        if (lowStr[i] == o) {
+            o += 1
+        } else if (lowStr[i] == x) {
+            x += 1
+        }
+    }
+    if (o == x) {
+        return true
+    } else {
+        return false
+    }
 }
+console.log(XO("ooxx"))
+console.log(XO("xooxx"))
+console.log(XO("ooxXm"))
+console.log(XO("zpzpzpp"))
+console.log(XO("zzoo"))
