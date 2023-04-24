@@ -14,9 +14,9 @@ function XO(str) {
     o = 0
     lowStr = str.toLowerCase()
     for (let i = 0; i < lowStr.length; i++) {
-        if (lowStr[i] == o) {
+        if (lowStr[i] === 'o') {
             o += 1
-        } else if (lowStr[i] == x) {
+        } else if (lowStr[i] === 'x') {
             x += 1
         }
     }
