@@ -7,6 +7,10 @@
 //Note: The function accepts an integer and returns an integer.
 
 function squareDigits(num){   
-    return 0;
+    const arr = num.toString().split('');
+    const newArray = arr.map(value => value * value);
+    const numScuared = newArray.join('')
+    return numScuared;
   }
 
+console.log(squareDigits(765));
