@@ -18,18 +18,18 @@
 //      I
 //       I
 // My solution:
-function drawStairs(x) {
-    if (x == 1) {
-        stairs = "I";
-    } else {
-        stairs = ""
-        for (var i = 1; i < x; i++){
-            stairs += "I\n";
-            stairs += " ".repeat(i);
-        }
-        stairs += "I"
-    }    
-    return stairs
-  }
+    function drawStairs(x) {
+        if (x == 1) {
+            stairs = "I";
+        } else {
+            stairs = ""
+            for (var i = 1; i < x; i++){
+                stairs += "I\n";
+                stairs += " ".repeat(i);
+            }
+            stairs += "I"
+        }    
+        return stairs
+    }
 
-console.log(drawStairs(20));
+console.log(drawStairs(3));
