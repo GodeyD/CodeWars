@@ -15,6 +15,14 @@
 //   })
 // })
 // My solution:
-function arrayPlusArray(arr1, arr2) {
-    return arr1 + arr2; //something went wrong
-  }
+function arrayPlusArray(arr1, arr2) {  
+    let sum = 0;
+    arr1.forEach(myFunction);
+    arr2.forEach(myFunction)
+    function myFunction(value) {
+        sum += value;
+    }
+    return sum;
+}
+
+console.log(arrayPlusArray([-1, -2, -3], [-4, -5, -6]));
