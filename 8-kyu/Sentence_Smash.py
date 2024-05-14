@@ -5,3 +5,7 @@
 
 # My answer:
 def smash(words):
+    x = " ".join(words)
+    return x
+
+print(smash(['hello', 'world', 'this', 'is', 'great']))  
