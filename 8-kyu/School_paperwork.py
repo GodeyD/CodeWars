@@ -7,4 +7,11 @@
 # n=-5, m=5:  0
 
 # My answer:
-def paperwork(n, m): 
+def paperwork(n, m):
+    if n<1 or m<1: 
+        blank = 0
+    else:
+        blank = n * m
+    return blank
+
+print(paperwork(1, 4))
