@@ -10,4 +10,21 @@
 
 # My answer:
 def two_oldest_ages(ages):
-    #your code here
+    age1 = 0
+    age2 = 0
+    index = 0
+    for i, age in enumerate(ages, start=0):
+        if age > age1:
+            index = i
+            age1 = age            
+            print(index, age1)
+    for age in ages:
+        if age == age1:
+            del ages[index]
+            print(ages)
+    for age in ages:
+        if age > age2:
+            age2 = age 
+    return [age2, age1]
+
+print(two_oldest_ages([53, 9, 42, 73, 88, 52, 48, 68, 97, 92, 96, 56, 84, 7, 4, 98, 2, 76, 63, 90, 24, 98, 9, 30, 45, 6, 34, 3, 82]))
