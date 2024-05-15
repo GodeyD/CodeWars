@@ -2,4 +2,8 @@
 
 # My answer:
 def get_size(w,h,d):
+    area = 2*d*w+2*d*h+2*h*w
+    volume = w*h*d
+    return [area, volume]
     #your code here
+print(get_size(1, 2, 2))
