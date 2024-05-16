@@ -4,5 +4,7 @@
 
 # My answer:
 def difference_in_ages(ages):
-    # your code here
-    pass
+    ages.sort()
+    return (ages[0], ages[-1], ages[-1] - ages[0])
+
+print(difference_in_ages([16, 22, 31, 44, 3, 38, 27, 41, 88]))
