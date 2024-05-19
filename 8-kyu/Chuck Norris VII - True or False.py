@@ -9,4 +9,4 @@
 # My answer:
 
 def if_chuck_says_so():
-    # code her
+    return 10 < 9
