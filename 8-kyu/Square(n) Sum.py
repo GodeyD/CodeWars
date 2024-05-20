@@ -4,4 +4,9 @@
 
 # My answer:
 def square_sum(numbers):
-    #your code here
+    sum = 0
+    for n in numbers:  
+        sum += n**2
+    return sum
+
+print(square_sum([1, 2, 2]))
