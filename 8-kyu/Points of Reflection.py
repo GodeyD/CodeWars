@@ -7,5 +7,6 @@
 # My answer:
 
 def symmetric_point(p, q):
-    # your code here
-    return []
+    return [q[0] - (p[0] - q[0]), q[1] - (p[1] - q[1])]
+
+print(symmetric_point([0,0], [1,1]))
