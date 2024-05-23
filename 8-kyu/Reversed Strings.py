@@ -5,4 +5,9 @@
 
 # My answer:
 def solution(string):
-    pass
+    str = ""
+    for w in string:
+        str = w + str
+    return str
+
+print(solution('world'))
