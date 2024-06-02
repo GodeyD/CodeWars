@@ -6,4 +6,11 @@
 
 # My answer:
 def divisible_by(numbers, divisor):
-    pass
+    ouput = []
+    for i in numbers:
+        print(float(i / divisor).is_integer())
+        if float(i / divisor).is_integer() == True:
+            ouput.append(i)
+    return ouput
+
+print(divisible_by([1, 2, 3, 4, 5, 6], 2))
