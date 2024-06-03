@@ -7,4 +7,9 @@
 
 # My answer:
 def invert(lst):
-    pass
+    newLst = []
+    for i in lst:
+        newLst.append(i * -1)
+    return newLst
+
+print(invert([1, -2, 3, -4, 5]))
