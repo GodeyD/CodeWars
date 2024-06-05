@@ -2,4 +2,6 @@
 
 # My answer:
 def multiply(a, b):
-    a * b
+   return a * b
+
+print(multiply(2, 1))
